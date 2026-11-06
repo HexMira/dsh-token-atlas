@@ -1,0 +1,6 @@
+# Bundle patch for dsh-token-atlas.
+# Selecting this package as a DSH profile bundle applies this insert layer.
+# A manual/link install can add the same row directly to the profile patch.
+- insert:
+    - id: token-atlas
+      name: dsh-token-atlas

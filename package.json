@@ -1,0 +1,55 @@
+{
+  "name": "dsh-token-atlas",
+  "version": "0.1.0",
+  "description": "DSH multi-device token accounting: a local session ledger plus the official DeepSeek account usage view in the left sidebar.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "token",
+    "usage",
+    "account",
+    "multi-device",
+    "cost"
+  ],
+  "author": "Mirakovsky",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HexMira/dsh-token-atlas.git"
+  },
+  "homepage": "https://github.com/HexMira/dsh-token-atlas#readme",
+  "bugs": {
+    "url": "https://github.com/HexMira/dsh-token-atlas/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.1 <0.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
